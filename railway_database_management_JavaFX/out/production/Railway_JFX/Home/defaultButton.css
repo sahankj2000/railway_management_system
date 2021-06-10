@@ -1,0 +1,8 @@
+.button{
+    -fx-background-color: #4169E1;
+    -fx-text-fill: white;
+    -fx-font: bold italic 20pt;
+    -fx-alignment: CENTER;
+    -fx-background-radius: 15;
+
+}

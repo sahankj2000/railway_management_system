@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.ticketAlter">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Login/dark2.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="tkAUHeader" fill="WHITE" layoutX="263.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="260.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tkID">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="260.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psName">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="260.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psAge">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="260.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psGender">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="260.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="platform">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="260.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tkClass">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="260.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="amt">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="260.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="260.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="route">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tkID" layoutX="462.0" layoutY="143.0" prefHeight="26.0" prefWidth="213.0" />
+      <TextField fx:id="psName" layoutX="462.0" layoutY="183.0" prefHeight="26.0" prefWidth="213.0" />
+      <TextField fx:id="psAge" layoutX="462.0" layoutY="223.0" prefHeight="26.0" prefWidth="213.0" />
+      <ChoiceBox fx:id="psGender" layoutX="462.0" layoutY="263.0" prefHeight="26.0" prefWidth="213.0" />
+      <ChoiceBox fx:id="platform" layoutX="462.0" layoutY="303.0" prefHeight="26.0" prefWidth="213.0" />
+      <ChoiceBox fx:id="tkClass" layoutX="462.0" layoutY="343.0" prefHeight="26.0" prefWidth="213.0" />
+      <ChoiceBox fx:id="tkRoute" layoutX="462.0" layoutY="383.0" prefHeight="26.0" prefWidth="213.0" />
+      <Button fx:id="tkAUButton" defaultButton="true" layoutX="462.0" layoutY="545.0" mnemonicParsing="false" onAction="#alterTicket" text="Add" />
+      <Button layoutX="612.0" layoutY="545.0" mnemonicParsing="false" onAction="#closeTKA" text="Cancel" />
+      <TextField fx:id="seatNo" layoutX="462.0" layoutY="463.0" prefHeight="26.0" prefWidth="213.0" />
+      <Text fill="WHITE" layoutX="260.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="seatNO">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="date" layoutX="462.0" layoutY="423.0" prefHeight="26.0" prefWidth="213.0" />
+      <Text fill="WHITE" layoutX="683.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YYYY-MM-DD">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="596.0" layoutY="503.0" mnemonicParsing="false" onAction="#genAmt" text="Generate" />
+      <Text fx:id="amt" fill="WHITE" layoutX="462.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
